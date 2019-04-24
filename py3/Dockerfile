@@ -7,5 +7,6 @@ RUN apk add --no-cache --virtual .build-deps \
     && pip install --no-cache-dir \
     pylint==2.3.1 \
     pylint-exit==1.0.0 \
+    pylint-django==2.0.8 \
     && pip uninstall pip -y \
     && apk del .build-deps
